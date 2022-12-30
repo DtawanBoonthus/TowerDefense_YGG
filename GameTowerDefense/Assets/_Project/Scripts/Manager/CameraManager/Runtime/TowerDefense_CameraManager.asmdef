@@ -1,0 +1,21 @@
+{
+    "name": "TowerDefense_CameraManager",
+    "rootNamespace": "TowerDefense",
+    "references": [
+        "GUID:2d16f5b00e4aad947bad651ef7ec6716"
+    ],
+    "includePlatforms": [
+        "Editor",
+        "WSA",
+        "WindowsStandalone32",
+        "WindowsStandalone64"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
