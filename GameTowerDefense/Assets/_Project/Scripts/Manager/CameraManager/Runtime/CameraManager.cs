@@ -19,6 +19,9 @@ namespace TowerDefense.Manager.CameraManager.Runtime
 
         private void Awake()
         {
+#if UNITY_EDITOR
+            DebugAssert();
+#endif
            SetTargetViewpointPosition();
         }
 
@@ -29,5 +32,17 @@ namespace TowerDefense.Manager.CameraManager.Runtime
         {
             targetViewpoint.position = mapData.MapCenter;
         }
+
+        #region DEBUG
+
+#if UNITY_EDITOR
+        private void DebugAssert()
+        {
+            Debug.Assert(mapData != null, "mapData cannot be null");
+            Debug.Assert(targetViewpoint != null, "targetViewpoint cannot be null");
+        }
+#endif
+
+        #endregion
     }
 }

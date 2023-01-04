@@ -12,6 +12,8 @@ namespace TowerDefense.Manager.MapManager.Runtime
         /// <summary>
         /// Can a waypoint be created on the box? True:yes | False:no
         /// </summary>
-        internal bool IsCanSpawnWaypoint { get; set; } = false;
+        public bool IsCanSpawnWaypoint { get; internal set; } = false;
+
+        public bool HaveTower { get; set; }
     }
 }

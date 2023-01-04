@@ -15,10 +15,10 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - StartPosition
+  - Enemy
+  - Tower
+  - Bullet
   - 
   - 
   - 

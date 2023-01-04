@@ -1,0 +1,25 @@
+{
+    "name": "TowerDefense_Unit",
+    "rootNamespace": "TowerDefense",
+    "references": [
+        "GUID:2d16f5b00e4aad947bad651ef7ec6716",
+        "GUID:99d4a6e4e8f44f24d90b549bbc86fd67",
+        "GUID:2ed93a5bd8cfda94e8cddace3ff66877",
+        "GUID:f83d8af2fe7aa824083d4e0519c16721",
+        "GUID:95e37ce0baa345f40ab3e041a7478fea"
+    ],
+    "includePlatforms": [
+        "Editor",
+        "WSA",
+        "WindowsStandalone32",
+        "WindowsStandalone64"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -24,8 +24,10 @@ namespace TowerDefense.Manager.MapManager.Runtime
         [SerializeField] private Transform parentBuildingArea;
         [Tooltip("Parent walking area.")]
         [SerializeField] private Transform parentWalkingArea;
-        
-        [Space]
+
+        [Space] 
+        [Tooltip("Start layer.")]
+        [SerializeField] private string startLayer;
         [Tooltip("Map width.")]
         [SerializeField] [Min(3)] private int width;
         [Tooltip("Map length.")]
@@ -84,6 +86,8 @@ namespace TowerDefense.Manager.MapManager.Runtime
                         }
                     }
                     
+                    tempBoxMap.HaveTower = false;
+                    
                     // Set waypoint for enemy.
                     tempBoxMap.IsCanSpawnWaypoint = i == 0 && (j == 0 || j == length - 1) ||
                                                     i == width - 1 && (j == 0 || j == length - 1);
@@ -102,6 +106,9 @@ namespace TowerDefense.Manager.MapManager.Runtime
             (boxWaypoints[2], boxWaypoints[3]) = (boxWaypoints[3], boxWaypoints[2]); // Swap index 2,3.
             BoxMap boxSpawn = boxWaypoints[spawnPoint]; // Get spawn point.
             boxSpawn.gameObject.GetComponentInChildren<Renderer>().material.color = colorBoxSpawn; // Change color.
+            boxSpawn.gameObject.AddComponent<BoxCollider>().isTrigger = true; // Add BoxCollider.
+            boxSpawn.gameObject.layer = LayerMask.NameToLayer(startLayer); // Set layer.
+            boxSpawn.gameObject.AddComponent<Rigidbody>().isKinematic = true; // Add Rigidbody.
 
             GetWaypointPosition(boxWaypoints);
         }
@@ -138,6 +145,8 @@ namespace TowerDefense.Manager.MapManager.Runtime
             tempBoxMap.IsBoxBuilding = true;
         }
         
+        #region DEBUG
+
 #if UNITY_EDITOR
         private void DebugAssert()
         {
@@ -149,5 +158,7 @@ namespace TowerDefense.Manager.MapManager.Runtime
             Debug.Assert(parentWalkingArea != null, "parentWalkingArea cannot be null");
         }
 #endif
+
+        #endregion
     }
 }

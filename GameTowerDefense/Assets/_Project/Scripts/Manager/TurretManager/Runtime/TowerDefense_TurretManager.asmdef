@@ -1,0 +1,21 @@
+{
+    "name": "TowerDefense_TurretManager",
+    "rootNamespace": "TowerDefense",
+    "references": [
+        "GUID:95e37ce0baa345f40ab3e041a7478fea"
+    ],
+    "includePlatforms": [
+        "Editor",
+        "WSA",
+        "WindowsStandalone32",
+        "WindowsStandalone64"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

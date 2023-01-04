@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4be0faafdb034cdbae6c45614d297cef, type: 3}
+  m_Name: TurretManager
+  m_EditorClassIdentifier: 
+  poolManager: {fileID: 11400000, guid: f82df518fb2fd3348996a8c6a535cb3d, type: 2}
+  offset: {x: 0, y: 0.7, z: 0}

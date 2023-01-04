@@ -115,6 +115,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5549211124278783900}
   - component: {fileID: 3424253529954537624}
+  - component: {fileID: -6319265673029107937}
   m_Layer: 0
   m_Name: BoxBuildingArea
   m_TagString: Untagged
@@ -150,3 +151,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d8fa7f1c2c64c7c962b53d80364bf8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-6319265673029107937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5549211124278783899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eac5f3a863114097ad6a2781ac9be828, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turretManager: {fileID: 11400000, guid: 679e9f505c6f28942b80e2574c6f093c, type: 2}
+  mapData: {fileID: 11400000, guid: 515d745ec96558b4ea8a7619232ea314, type: 2}
+  boxMap: {fileID: 3424253529954537624}
+  colorSelectNotTower: {r: 0.28144264, g: 1, b: 0, a: 1}
+  colorSelectHaveTower: {r: 1, g: 0.8110068, b: 0, a: 1}

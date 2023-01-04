@@ -1,7 +1,10 @@
 {
     "name": "TowerDefense_MapManager",
     "rootNamespace": "TowerDefense",
-    "references": [],
+    "references": [
+        "GUID:e17710aba5f64a740a03708475122e4a",
+        "GUID:95e37ce0baa345f40ab3e041a7478fea"
+    ],
     "includePlatforms": [
         "Editor",
         "WSA",

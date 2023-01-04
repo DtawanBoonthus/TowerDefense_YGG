@@ -1,0 +1,28 @@
+{
+    "name": "TowerDefense_GameManager",
+    "rootNamespace": "TowerDefense",
+    "references": [
+        "GUID:2d16f5b00e4aad947bad651ef7ec6716",
+        "GUID:cb92ed9355013874f914f727fe546bb4",
+        "GUID:95e37ce0baa345f40ab3e041a7478fea",
+        "GUID:57240bd11c470b74290c1f861b6d108c",
+        "GUID:99d4a6e4e8f44f24d90b549bbc86fd67",
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:f83d8af2fe7aa824083d4e0519c16721",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f"
+    ],
+    "includePlatforms": [
+        "Editor",
+        "WSA",
+        "WindowsStandalone32",
+        "WindowsStandalone64"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

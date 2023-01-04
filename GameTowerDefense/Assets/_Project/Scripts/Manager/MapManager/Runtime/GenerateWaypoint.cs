@@ -39,6 +39,8 @@ namespace TowerDefense.Manager.MapManager.Runtime
             }
         }
         
+        #region DEBUG
+
 #if UNITY_EDITOR
         private void DebugAssert()
         {
@@ -47,5 +49,7 @@ namespace TowerDefense.Manager.MapManager.Runtime
             Debug.Assert(parentWaypoint != null, "parentWaypoint cannot be null");
         }
 #endif
+
+        #endregion
     }
 }

@@ -10,6 +10,11 @@ namespace TowerDefense.Manager.MapManager.Runtime
         [SerializeField] private bool isClockwise = false;
         
         /// <summary>
+        /// Enemies move clockwise? True:yes | False:no
+        /// </summary>
+        public bool IsClockwise => isClockwise;
+        
+        /// <summary>
         /// Created BoxMap.
         /// </summary>
         public List<BoxMap> BoxMaps { get; set; } = new List<BoxMap>();
@@ -18,25 +23,22 @@ namespace TowerDefense.Manager.MapManager.Runtime
         /// The destination the enemy will walk.
         /// </summary>
         public GameObject[] WaypointEnemies { get; set; } = new GameObject[4];
+
+        public Vector3 MapCenter => new Vector3((MapWidth / 2) - 0.5f, 0, (MapLength / 2) - 0.5f);
         
         /// <summary>
-        /// Enemies move clockwise? True:yes | False:no
+        /// Spawn point (index).
         /// </summary>
-        public bool IsClockwise => isClockwise;
-        
-        public Vector3 MapCenter => new Vector3((MapWidth / 2) - 0.5f, 0, (MapLength / 2) - 0.5f);
+        public int SpawnPoint { get; internal set; }
         
         /// <summary>
         /// Waypoint spawn location.
         /// </summary>
         internal Transform[] WaypointPositions { get; set; } = new Transform[4];
-        
-        /// <summary>
-        /// Spawn point (index).
-        /// </summary>
-        internal int SpawnPoint { get; set; }
-        
+
         internal float MapWidth { get; set; }
         internal float MapLength { get; set; }
+
+        public BoxMap BoxSelect { get; set; } = null;
     }
 }
